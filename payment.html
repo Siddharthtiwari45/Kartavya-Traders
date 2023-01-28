@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="allcss.css">
+    <title>payment form</title>
+</head>
+<style>
+    .box{
+        box-sizing: border-box;
+    }
+    .form{
+        margin-left: 370px;
+        margin-right: 50%;
+        
+        height:20%;
+        width: 50%;
+    }
+    .form1{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .form1,h1{
+        font-size: 25px;
+        color: rgb(246, 148, 148);
+    }
+@media(max-width:914px) {
+    .form img {
+        height: 350px;
+    }
+
+    .form h1,p{
+        font-size: 1.5rem;
+        
+        /* color: red; */
+
+    }
+}
+
+@media(min-width:412px) {
+    .form1 {
+        /* text-align: center; */
+        /* background: red; */
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 0%;
+
+        /* background: rgb(184, 125, 16); */
+
+    }
+
+    .form {
+        flex-basis: 100%;
+        width: 500px;
+        height:100%;
+        margin-left: 0%;
+        margin-right: 0%;       
+        
+    }
+
+}
+
+</style>
+<body>
+<div class="form">   
+    <div class="form1">
+        <form action="">
+        <center><u><h1>Payment Form </h1></u></center>
+        <hr>
+        <h1>Order Summary</h1>
+        <p>Name: <input type="text"name="name" required> </p>
+        <p>Phone Number: <input type="number"name="Phone Number" required> </p>
+        <legend>Type of address</legend>
+        <p>Home <input type="radio" name="typee" id="malee" required >
+        Work <input type="radio" name="typee" id="femalee" required></p>      
+
+        <p>Address:</p>
+            <textarea name="address" id="address" cols="35" rows="3"></textarea></p>
+        <p>Email: <input type="email" name="email" id="email"></p>
+        <p>Pincode <input type="number" name="number" id="number" required></p>
+        <p>State <input type="number" name="number" id="number" required></p>
+        <p>City <input type="number" name="number" id="number" required></p>
+        <hr>
+        <h3>Payment information</h3>
+        <p>
+            Card type:
+            <select name="Card_type" id="">
+            <option value="">select the card type</option>
+            <option value="visa">visa</option>
+            <option value="rupay">rupay</option>
+            <option value="master card">visa</option>
+        
+        </select>
+        </p>
+        <p>
+            Card number <input type="number" name="card" id="card number">
+        </p>
+        <p>
+            Expiration date: <input type="date" name="exp_date" id="exp_date">
+            </p>
+            <p>
+            cvv: <input type="password" name="cvv" id="cvv">
+        </p>
+        <input type="submit" value="Pay now" class="btn">
+        </form>
+    </div>
+</div>
+<!-- <div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Screenshot 2021-06-27 09.46.13.png" width="100%" alt="">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="Login()">Login</span>
+                        <span onclick="Register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forget password</a>
+                    </form>
+                    <form id="RegisterForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+</body>
+
+</html>

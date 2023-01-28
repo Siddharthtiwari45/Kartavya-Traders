@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartavaya</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" href="allcss.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- <img src="PicsArt_05-23-09.42.11.jpg" alt="" width="100px"> -->
+                    <!-- <img src="PicsArt_06-27-09.14.21.jpg" alt="" width="100px"> -->
+                    <a href="index.html"> <img src="screenshot 2021-06-27 09.46.13.png" width="100px"></a>
+                    <!-- <h3>Kartavaya Traders</h3> -->
+                </div>
+                <h2><b>&#160 Kartavaya Traders</b></h2>
+                <nav>
+                    <ul id="MenuItems">
+                        <!-- <li><h3 class="tittle"><a href="index.html" style="color:#555 ;">Home</a></li></h3> -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="contact us.html">Contact Us</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- search option  -->
+                <div class="pull-right mainHeaderCols searchWrapper">
+                    <div class="icon-addon addon-sm">
+                        <form class="searchContainer" style="position: relative; border-bottom: none;"><input
+                                class="searchInput form-controls" placeholder="Search" type="text" autocomplete="off"><i
+                                class="icon_search"></i></form>
+                        <div class="seperator"></div>
+                    </div>
+                </div>
+                <a href="shopping cart page.html"> <img src="154fdf2f2759676a96e9aed653082276.png" width="30px"
+                        height="30px"></a>
+                <img src="images.png" class="menu-icon " onclick="menutoggle()">
+
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <!-- <img src="Ambuja-Cement-Logo.jpg" alt="" width="200px"> -->
+                    <h1> We Make Your Home Desirable!</h1>
+                    <h2>*Eng. Siddharth Tiwari*</h2>
+                    <a href="" class="btn">Explore now</a>
+                </div>
+                <div class="col-2">
+                    <!-- <img src="PicsArt_05-23-09.42.11.jpg" alt=""> -->
+                    <img src="Screenshot 2021-06-27 09.46.13.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- featured categories -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <a href="AMBUJA.html"> <img src="Ambuja-Cement-startuptalky.jpg"></a>
+                    <h2>Giant compressive strength</h2>
+                </div>
+                <div class="col-3">
+                    <a href="ultratech.html"> <img src="1b292f8843723cfb3266f24691b2f46c.jpg"></a>
+                    <h2>The engineer’s choice.</h2>
+                </div>
+                <div class="col-3">
+                    <a href="ACC.html"><img src="acc-cement-limited-logo-tagline-1280x720-1-1.jpg"></a>
+                    <h2>Cementing relationships</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- featured product -->
+    <div class="small-container">
+
+        <h2 class="tittle">Categories</h2>
+
+        <div class="row">
+            <div class="col-3">
+                <a href="ceramic.html"> <img src="Ceramic_Tiles.jpg" alt=""></a>
+                <h4>Ceramic Tiles</h4>
+            </div>
+
+            <div class="col-3">
+                <a href="bathware.html"> <img src="sanitary bathware.jpg" alt=""></a>
+                <h4>Sanitary Bathware</h4>
+
+            </div>
+            <div class="col-3">
+                <a href="Bath tiles.html"> <img src="PicsArt_06-30-02.48.42.jpg" alt=""></a>
+                <h4>Bath tiles</h4>
+
+            </div>
+            <div class="col-3">
+                <a href="floor tiles.html"> <img src="floor tiles.jpg" alt=""></a>
+                <h4>Floor tiles</h4>
+
+            </div>
+            <div class="col-3">
+                <a href="kitchen wall tiles.html"> <img src="kitchen wall tiles.jpg" alt=""></a>
+                <h4>Kitchen Wall tiles</h4>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!--copyright--------------->
+    <footer>
+        <a class="copyright" href="#">&#169; Kartavaya Traders </a>
+    </footer>
+
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        var producting = document.getElementById("producting")
+        var smallImg = document.getElementsByClassName("small-img")
+        smallImg[0].onclick = function () {
+            producting.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            producting.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            producting.src = smallImg[2].src;
+        }
+    </script>
+
+</body>
+
+</html>
